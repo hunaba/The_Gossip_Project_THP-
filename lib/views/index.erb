@@ -1,0 +1,18 @@
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+  <h1><a href="/gossips/new/">bienvenue dans mon super site de gossip !</a></h1>
+
+    <h1> voici la liste des potins 2019 téachpé</h1>
+
+  <% gossips.each do |gossip| %>
+
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+  </body>
+</html>
+
